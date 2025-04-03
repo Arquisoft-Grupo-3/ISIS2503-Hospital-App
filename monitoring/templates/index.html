@@ -1,8 +1,28 @@
 {% extends 'base.html' %}
 {% block content %}
 
-    <div style=" display: flex; align-items: center; justify-content: center;" class="login-box auth0-box before">
-            <img style="width:80%; " src="/static/media/healthy-people-carrying-different-icons-related-to-healthy-lifestyle-vector.jpg" />
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="display-4 text-primary mb-4">¡Bienvenido a Hospital App 🏥!</h1>
+        <p class="lead mb-5">Administra tus clientes y exámenes MRI de forma clara, sencilla y rápida.</p>
+
+        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center mb-4">
+            <a href="/cliente" class="btn btn-outline-primary btn-lg">
+                <i class="fas fa-users"></i> Ver Clientes
+            </a>
+            <a href="/MRI" class="btn btn-outline-success btn-lg">
+                <i class="fas fa-file-medical"></i> Ver MRIs
+            </a>
+            <a href="/MRICreate" class="btn btn-success btn-lg">
+                <i class="fas fa-plus-circle"></i> Nuevo MRI
+            </a>
+        </div>
+
+        <img src="/static/media/healthy-people-carrying-different-icons-related-to-healthy-lifestyle-vector.jpg"
+             alt="Imagen de estilo de vida saludable"
+             class="img-fluid rounded shadow mt-4"
+             style="max-width: 600px;">
     </div>
+</div>
 
 {% endblock %}
