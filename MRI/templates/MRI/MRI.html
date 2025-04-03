@@ -8,22 +8,18 @@
         </div>
     </div>
 
-    <!-- Botón para crear nuevo MRI -->
-    <div class="text-right" style="margin: 15px 0;">
-        <a href="{% url 'MRICreate' %}" class="btn btn-success">
-            Crear nuevo MRI
-        </a>
-    </div>
+    <br>
 
     <div class="page-content-wrapper">
         <div class="container">
+ 
 
             <div class="panel panel-default">
                 <div class="panel-body">
                     <table class="table table-hover">
                         <thead>
                         <tr style="color:#0E2EB0">
-                            <th>Cliente</th>
+                            <th font color="red">Cliente</th>
                             <th>Fecha</th>
                             <th>Hora</th>
                             <th>Descripcion</th>
@@ -36,10 +32,6 @@
                                 <td>{{ measurement.fechaaa }}</td>
                                 <td>{{ measurement.hora }}</td>
                                 <td>{{ measurement.descripcion }}</td>
-                            </tr>
-                            {% empty %}
-                            <tr>
-                                <td colspan="4" class="text-center">No hay registros de MRI.</td>
                             </tr>
                             {% endfor %}
                         </tbody>
