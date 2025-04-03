@@ -4,6 +4,6 @@ from django.views.decorators.csrf import csrf_exempt
 from . import views
 
 urlpatterns = [
-    path('MRI/', views.MRI_list),
-    path('MRIcreate/', csrf_exempt(views.MRI_create), name='MRICreate'),
+    path('MRICreate/', views.MRI_create, name='MRICreate'),
+    path('MRI/', views.MRI_list, name='MRIList'),
 ]
