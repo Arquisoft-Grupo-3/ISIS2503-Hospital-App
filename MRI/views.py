@@ -27,5 +27,4 @@ def MRI_create(request):
     context = {
         'form': form,
     }
-
     return render(request, 'MRI/MRICreate.html', context)
