@@ -3,10 +3,10 @@ from .forms import MRIForm
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.urls import reverse
-from .logic.logic_MRI import create_mri, get_mris  
+from .logic.logic_MRI import create_mri, get_mris
 
 def MRI_list(request):
-    mris = get_mris()  
+    mris = get_mris()[:10] 
     context = {
         'MRI_list': mris
     }
