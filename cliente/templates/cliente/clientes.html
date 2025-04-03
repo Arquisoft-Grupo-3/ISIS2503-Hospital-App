@@ -14,20 +14,16 @@
             <thead class="table-primary text-center">
                 <tr>
                     <th>Nombre</th>
-                    <th>Edad</th>
-                    <th>Dirección</th>
                 </tr>
             </thead>
             <tbody>
                 {% for cliente in cliente_list %}
                 <tr>
                     <td>{{ cliente.name }}</td>
-                    <td>{{ cliente.age }}</td>
-                    <td>{{ cliente.address }}</td>
                 </tr>
                 {% empty %}
                 <tr>
-                    <td colspan="3" class="text-center text-muted">No hay clientes registrados.</td>
+                    <td class="text-center text-muted">No hay clientes registrados.</td>
                 </tr>
                 {% endfor %}
             </tbody>
